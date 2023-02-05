@@ -1,0 +1,286 @@
+#contactosDiv {
+    align-items: center;
+    padding-bottom: 30px;
+    margin-top: 110px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1.2px solid rgb(107, 107, 107);
+    padding: 40px;
+}
+
+.edit-button {
+    margin-right: 5px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.edit-button:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.delete-button {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.delete-button:hover {
+    background-color: white;
+    color: red;
+}
+
+.contenido {
+    padding-bottom: 10px;
+    margin-top: 110px;
+}
+
+.tituloCon {
+    font-size: 45px;
+    color: rgb(107, 107, 107);
+    text-align: center;
+}
+
+.filaDeControlCon {
+    margin: 20px;
+    font-size: 20px;
+    background: #f3f3f3;
+    color: #424242;
+    padding: 20px;
+}
+
+.filaDeControlCon button {
+    margin-left: 600px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    border: 0px;
+    background: none;
+    border-radius: 200px;
+    outline: none;
+    font-weight: bold;
+}
+
+.filaDeControlCon button:hover {
+    background: gray;
+    color: white;
+}
+
+.filaDeControlCon button:active {
+    background: white;
+}
+
+#formCon {
+    margin: 20px;
+    padding: 20px;
+}
+
+.secformCon {
+    margin-left: 15px;
+    padding: 10px;
+    color: rgb(107, 107, 107);
+}
+
+.inputCon {
+    width: 720px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+}
+
+.labelCont {
+    font-size: 20px;
+}
+
+#btnCont {
+    margin: 26px;
+    width: 724px;
+    height: 40px;
+    color: white;
+    background: rgb(107, 107, 107);
+    border: 0px;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnCont:active {
+    border: 5px solid rgb(107, 107, 107);
+    color: rgb(107, 107, 107);
+    background: white;
+}
+
+#borrarContsBtn {
+    margin: 5px 20px 5px 20px;
+    font-size: 24px;
+    background: #f3f3f3;
+    color: #424242;
+    padding: 10px;
+    width: 912px;
+    border: 0;
+    font-weight: bold;
+    outline: none;
+}
+
+#borrarContsBtn:hover {
+    background: #dfdfdf;
+}
+
+#borrarContsBtn:active {
+    background: #393939;
+    color: #f3f3f3;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+table {
+    width: 100%;
+}
+
+thead {
+    background-color: #6f42c1;
+    color: #fff;
+}
+
+tbody tr:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(circle, #24246e, #06051f);
+    height: 100vh;
+}
+
+.content h1 {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: sans-serif;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box ul li {
+    position: fixed;
+    z-index: -1;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    margin-bottom: 1.2em;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid yellow;
+    border-left: 0.3em solid transparent;
+    list-style: none;
+    opacity: 0;
+    bottom: 0;
+    left: 10vw;
+    animation: animate 15s linear infinite;
+}
+
+.box ul li:before,
+.box ul li:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid yellow;
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+}
+
+.box ul li:after {
+    transform: rotate(35deg);
+}
+
+.box ul li:nth-child(2) {
+    left: 36vw;
+    animation-delay: 2s;
+}
+
+.box ul li:nth-child(3) {
+    left: 22vw;
+    animation-delay: 4s;
+}
+
+.box ul li:nth-child(4) {
+    left: 56vw;
+    animation-delay: 6s;
+}
+
+.box ul li:nth-child(5) {
+    left: 76vw;
+    animation-delay: 4s;
+}
+
+.box ul li:nth-child(6) {
+    left: 80vw;
+    animation-delay: 8s;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) rotate(0);
+        opacity: 1;
+        bottom: 0;
+    }
+
+    100% {
+        transform: scale(5) rotate(360deg);
+        opacity: 0;
+        bottom: 100vh;
+    }
+}
+
+@media only screen and (max-width: 768px) { /* Pantallas pequeñas */
+    h1.tituloCon {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) { /* Pantallas muy pequeñas */
+    h1.tituloCon {
+      font-size: 1.2em;
+    }
+  }

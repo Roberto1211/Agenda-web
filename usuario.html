@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/usuario-style.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/background.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<title>Usuario</title>
+</head>
+
+<body>
+	<div class="navigation-wrap bg-light start-header start-style">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light" style="background-color: #111;">
+
+						<a class="navbar-brand" href="contactos.html" style="font-size: 30px; color:#ffffff"><i
+								class='bx bx-book bx-tada bx-rotate-90' style='padding-right: 15px;'></i>Agenda web</a>
+
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="contactos.html">Contactos</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="favoritos.html">Favoritos</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="to_do_list.html">To do list</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+										aria-haspopup="true" aria-expanded="false"><img
+											src="https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png"
+											class="round-img"> Usuario</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="usuario.html">Informacion</a>
+										<a class="dropdown-item" href="#">Logout</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="contenido">
+		<div class="container">
+			<div class="bg-white shadow rounded-lg d-block d-sm-flex">
+				<div class="profile-tab-nav border-right">
+					<div class="p-4">
+						<div class="img-circle text-center mb-3">
+							<img src="https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png"
+								class="shadow">
+						</div>
+						<h4 class="text-center">User</h4>
+					</div>
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab"
+							aria-controls="account" aria-selected="true">
+							<i class="fa fa-home text-center mr-1"></i>
+							Cuenta
+						</a>
+						<a class="nav-link" id="password-tab" data-toggle="pill" href="#password" role="tab"
+							aria-controls="password" aria-selected="false">
+							<i class="fa fa-key text-center mr-1"></i>
+							Contraseña
+						</a>
+						<a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab"
+							aria-controls="security" aria-selected="false">
+							<i class="fa fa-user text-center mr-1"></i>
+							Seguridad
+						</a>
+					</div>
+				</div>
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+						<h3 class="mb-4">Ajustes de cuenta</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Nombre</label>
+									<input type="text" class="form-control" placeholder="nombre">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Apellido</label>
+									<input type="text" class="form-control" placeholder="apellido">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Correo electronico</label>
+									<input type="text" class="form-control" placeholder="correo">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Numero de telefono</label>
+									<input type="text" class="form-control" placeholder="telefono">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Compañia</label>
+									<input type="text" class="form-control" placeholder="compañia">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Asignacion</label>
+									<input type="text" class="form-control" placeholder="asignacion">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label>Biografia</label>
+									<textarea class="form-control" rows="4"></textarea>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Actualizar</button>
+							<button class="btn btn-light">Cancelar</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+						<h3 class="mb-4">Ajustes de contraseña</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Antigua contraseña</label>
+									<input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Nueva contraseña</label>
+									<input type="password" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Confirmar nueva contraseña</label>
+									<input type="password" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+							<button class="btn btn-light">Cancel</button>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+						<h3 class="mb-4">Ajustes de seguridad</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Login</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Autorizacion de dos pasos</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="recovery">
+										<label class="form-check-label" for="recovery">
+											Recuperar
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Actualizar</button>
+							<button class="btn btn-light">Cancelar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="wrapper">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<footer>
+		<div class="footer-content">
+			<h3>Agenda web</h3>
+			<p>Gracias por visitar mi agenda web. Espero que te sea de gran ayuda para organizar tus compromisos
+				y tareas. Si tienes algún comentario o sugerencia, no dudes en ponerte en contacto conmigo.</p>
+			<ul class="socials">
+				<li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+				<li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+				<li><a href="#"><i class='bx bxl-google-plus-circle'></i></a></li>
+				<li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+				<li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+			<p>copyright &copy;2023 Roberto Saldaña</p>
+		</div>
+	</footer>
+
+	<script src="js/navbar.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="js/navbar.js"></script>
+</body>
+
+</html>

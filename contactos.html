@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/contactos-style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <title>Contactos</title>
+</head>
+
+<body>
+  <div class="navigation-wrap bg-light start-header start-style">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-md navbar-light" style="background-color: #111;">
+
+            <a class="navbar-brand" href="contactos.html" style="font-size: 30px; color:#ffffff"><i
+                class='bx bx-book bx-tada bx-rotate-90' style='padding-right: 15px;'></i>Agenda web</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto py-4 py-md-0">
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="contactos.html">Contactos</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="favoritos.html">Favoritos</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="to_do_list.html">To do list</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false"><img
+                      src="https://www.pngitem.com/pimgs/m/150-1503945_transparent-user-png-default-user-image-png-png.png"
+                      class="round-img"> Usuario</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="usuario.html">Informacion</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="contenido">
+    <div id="contactosDiv">
+      <h1 class="tituloCon">Lista de contactos</h1>
+      <div class="form-container">
+        <div class="col-md-6">
+          <a href="agregar_contacto.html" style="text-decoration: none;">
+            <button class="btn btn-primary btn-lg btn-block" type="button">
+              Agregar
+            </button>
+          </a>
+          <!--<button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="collapse"
+            data-target="#formCollapse" aria-expanded="false" aria-controls="formCollapse">
+            Agregar
+          </button>
+          <div class="collapse" id="formCollapse">
+            <form>
+              <br>
+              <div class="form-group">
+                <label for="emailInput">Correo electrónico</label>
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                  placeholder="Ingrese su correo electrónico" />
+              </div>
+              <div class="form-group">
+                <label for="passwordInput">Contraseña</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="Ingrese su contraseña" />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Finalizar</button>
+            </form>
+          </div>-->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="table-responsive">
+          <table class="table table-striped" id="tabla">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Contraseña</th>
+                <th>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>25468547</td>
+                <td>juan.perez@email.com</td>
+                <td>********</td>
+              </tr>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Maria</td>
+                <td>Rodriguez</td>
+                <td>54861254</td>
+                <td>maria.rodriguez@email.com</td>
+                <td>********</td>
+              </tr>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Carlos</td>
+                <td>Gonzalez</td>
+                <td>79462158</td>
+                <td>carlos.gonzalez@email.com</td>
+                <td>********</td>
+              </tr>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Ana</td>
+                <td>Martinez</td>
+                <td>87541235</td>
+                <td>ana.martinez@email.com</td>
+                <td>********</td>
+              </tr>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Luis</td>
+                <td>Fernandez</td>
+                <td>94685213</td>
+                <td>luis.fernandez@email.com</td>
+                <td>********</td>
+              </tr>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Sofia</td>
+                <td>Gutierrez</td>
+                <td>97541258</td>
+                <td>sofia.gutierrez@email.com</td>
+                <td>********</td>
+              </tr>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Jose</td>
+                <td>Torres</td>
+                <td>94685125</td>
+                <td>jose.torres@email.com</td>
+                <td>********</td>
+              </tr>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Isabel</td>
+                <td>Ramirez</td>
+                <td>79465218</td>
+                <td>isabel.ramirez@email.com</td>
+                <td>********</td>
+              </tr>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Samuel</td>
+                <td>García</td>
+                <td>97548124</td>
+                <td>samuel.garcia@email.com</td>
+                <td>********</td>
+              </tr>
+              <tr onclick="window.location.href='informacion.html'">
+                <td>Daniela</td>
+                <td>Sánchez</td>
+                <td>94685217</td>
+                <td>daniela.sanchez@email.com</td>
+                <td>********</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </section>
+
+  <div class="wrapper">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Agenda web</h3>
+      <p>Gracias por visitar mi agenda web. Espero que te sea de gran ayuda para organizar tus compromisos
+        y tareas. Si tienes algún comentario o sugerencia, no dudes en ponerte en contacto conmigo.</p>
+      <ul class="socials">
+        <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+        <li><a href="#"><i class='bx bxl-google-plus-circle'></i></a></li>
+        <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+        <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2023 Roberto Saldaña</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/buttons.js"></script>
+</body>
+
+</html>

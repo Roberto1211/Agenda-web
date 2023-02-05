@@ -1,0 +1,145 @@
+#contactosDiv {
+  align-items: center;
+  padding-bottom: 30px;
+  margin-top: 110px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1.2px solid rgb(107, 107, 107);
+  padding: 40px;
+}
+
+.edit-button {
+  margin-right: 10px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.edit-button:hover {
+  background-color: black;
+  color: yellow;
+}
+
+.delete-button {
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.delete-button:hover {
+  background-color: white;
+  color: red;
+}
+
+.contenido {
+  padding-bottom: 10px;
+}
+
+.tituloCon {
+  font-size: 45 px;
+  color: rgb(107, 107, 107);
+  text-align: center;
+}
+
+.filaDeControlCon {
+  margin: 20px;
+  font-size: 20px;
+  background: #f3f3f3;
+  color: #424242;
+  padding: 20px;
+}
+
+.filaDeControlCon button {
+  margin-left: 600px;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border: 0px;
+  background: none;
+  border-radius: 200px;
+  outline: none;
+  font-weight: bold;
+}
+
+.filaDeControlCon button:hover {
+  background: gray;
+  color: white;
+}
+
+.filaDeControlCon button:active {
+  background: white;
+}
+
+#formCon {
+  margin: 20px;
+  padding: 20px;
+}
+
+.secformCon {
+  margin-left: 15px;
+  padding: 10px;
+  color: rgb(107, 107, 107);
+}
+
+.inputCon {
+  width: 720px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+}
+
+.labelCont {
+  font-size: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  background-color: #6f42c1;
+  color: #fff;
+}
+
+tbody tr:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 768px) { /* Pantallas pequeñas */
+  h1.tituloCon {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 480px) { /* Pantallas muy pequeñas */
+  h1.tituloCon {
+    font-size: 1.2em;
+  }
+}
